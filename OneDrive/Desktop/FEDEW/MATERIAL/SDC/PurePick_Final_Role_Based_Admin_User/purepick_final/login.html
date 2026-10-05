@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>PurePick | Login</title>
+<link rel="stylesheet" href="css/style.css">
+<style>
+.login-role-switch{display:flex;gap:8px;margin:16px 0}.login-role-switch button{flex:1;padding:10px;border:1px solid #ddd;background:#fff;border-radius:8px;cursor:pointer;font-weight:600}.login-role-switch button.active{background:#16833a;color:#fff;border-color:#16833a}.login-note{font-size:13px;color:#666;margin:8px 0 14px}.admin-demo{display:none;background:#f0f8f2;border:1px solid #b9dfc4;padding:10px;border-radius:8px;font-size:13px;margin-bottom:12px}.admin-demo strong{color:#146c2f}
+</style>
+</head>
+<body class="auth-page">
+<div class="auth-card">
+<a class="brand centered" href="index.html"><span class="brand-mark">P</span><span>Pure<span class="green">Pick</span></span></a>
+<h1 id="loginTitle">Customer Login</h1><p id="loginSubtitle">Login to continue shopping.</p>
+<div class="login-role-switch"><button type="button" id="userMode" class="active">Customer</button><button type="button" id="adminMode">Admin</button></div>
+<div id="adminDemo" class="admin-demo"><strong>Review Admin Login</strong><br>Email: admin@purepick.com<br>Password: admin123</div>
+<form id="loginForm"><input id="loginEmail" type="email" placeholder="Email address" required><input id="loginPassword" type="password" placeholder="Password" required><button id="loginButton" class="primary-btn full">Login as Customer</button></form>
+<p id="signupPrompt">New to PurePick? <a href="signup.html">Create an account</a></p><a class="back-home" href="index.html">← Back to home</a>
+</div>
+<script src="js/auth.js"></script>
+</body></html>
